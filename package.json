@@ -1,0 +1,17 @@
+{
+  "name": "floatpos-ios",
+  "version": "1.0.0",
+  "description": "FloatPOS native iOS shell (Capacitor) - host-loads https://floatpos.co.za",
+  "private": true,
+  "scripts": {
+    "sync": "cap sync ios"
+  },
+  "dependencies": {
+    "@capacitor/core": "^8.4.1",
+    "@capacitor/ios": "^8.4.1"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^8.4.1",
+    "@capacitor/assets": "^3.0.5"
+  }
+}
