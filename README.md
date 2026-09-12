@@ -20,10 +20,12 @@ Sibling Android shell: [devdirkuijs/floatpos-android](https://github.com/devdirk
 
 Push to `main` (or run **Actions → Build FloatPOS iOS → Run workflow**). The
 workflow runs `npx cap add ios`, generates icons/splash, syncs Capacitor, and
-archives an unsigned `.xcarchive` artifact for local signing / TestFlight.
+builds an unsigned **iOS Simulator** `.app` artifact (Capacitor 8 uses SPM /
+`App.xcodeproj`, not a CocoaPods workspace).
 
-Apple signing secrets are not required for the archive step. To export an IPA
-for TestFlight, add certs/profiles later and extend the workflow.
+Apple signing secrets are not required for that CI build. To export an IPA for
+TestFlight, add certs/profiles later and switch the workflow to a device
+archive + export.
 
 ---
 
